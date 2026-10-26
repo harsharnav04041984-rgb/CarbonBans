@@ -1,0 +1,26 @@
+name: Build CarbonBans
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+      - name: Build with Maven
+        run: mvn --batch-mode --no-transfer-progress clean package
+      - name: Upload plugin JAR
+        uses: actions/upload-artifact@v4
+        with:
+          name: CarbonBans
+          path: target/CarbonBans.jar
