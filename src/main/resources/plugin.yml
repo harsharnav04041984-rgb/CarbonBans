@@ -1,0 +1,76 @@
+name: CarbonBans
+main: com.carbonbans.CarbonBans
+version: 1.0.0
+api-version: 1.20
+author: 150fps_s
+description: A modern, lightweight punishment management plugin.
+
+commands:
+  ban:
+    aliases: [cban]
+  tempban:
+    aliases: [ctempban]
+  ipban:
+    aliases: [cipban]
+  mute:
+    aliases: [cmute]
+  tempmute:
+    aliases: [ctempmute]
+  muteip:
+    aliases: [cmuteip]
+  kick:
+    aliases: [ckick]
+  warn:
+    aliases: [cwarn]
+  unban:
+    aliases: [cunban]
+  unmute:
+    aliases: [cunmute]
+  unwarn:
+    aliases: [cunwarn]
+  history:
+    aliases: [chistory]
+  check:
+    aliases: [ccheck]
+  carbonbans:
+    aliases: [cb]
+  banlist:
+    aliases: [cbanlist]
+  mutelist:
+    aliases: [cmutelist]
+  alts:
+    aliases: [calts]
+
+permissions:
+  carbonbans.admin:
+    default: op
+  carbonbans.ban:
+    default: op
+  carbonbans.tempban:
+    default: op
+  carbonbans.ipban:
+    default: op
+  carbonbans.mute:
+    default: op
+  carbonbans.tempmute:
+    default: op
+  carbonbans.muteip:
+    default: op
+  carbonbans.kick:
+    default: op
+  carbonbans.warn:
+    default: op
+  carbonbans.unban:
+    default: op
+  carbonbans.unmute:
+    default: op
+  carbonbans.unwarn:
+    default: op
+  carbonbans.history:
+    default: op
+  carbonbans.reload:
+    default: op
+  carbonbans.mod:
+    default: op
+  carbonbans.alts:
+    default: op
