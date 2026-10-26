@@ -1,0 +1,18 @@
+# Maven
+target/
+dependency-reduced-pom.xml
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+.classpath
+.project
+.settings/
+
+# Local/server data
+*.db
+*.sqlite
+*.sqlite3
+logs/
+server.properties
